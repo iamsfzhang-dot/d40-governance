@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>中国特色的国家治理 — 周黎安教授 | 北京大学光华管理学院</title>
+<meta name="description" content="北京大学光华管理学院学术讲座：中国特色的国家治理 - 行政发包制、治理不可能三角与三位一体框架">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+<style>
+  /* ═══════════════════════════════════════
+     GUANGHUA VI COLORS - Official
+     北大红: #C41230  |  深蓝: #003366  |  灰: #666666
+  ═══════════════════════════════════════ */
+  :root {
+    --pkured: #C41230;
+    --pkured-light: #E82E48;
+    --pkured-dark: #A00E26;
+    --darkblue: #003366;
+    --darkblue-light: #0D4A7C;
+    --gray: #666666;
+    --gray-light: #999999;
+    --gray-lighter: #F5F5F5;
+    --white: #FFFFFF;
+    --bg: #FAFAFA;
+    --text: #333333;
+    --text-light: #555555;
+    
+    --font-cn: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+    --font-en: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+    --shadow: 0 4px 20px rgba(0,51,102,0.08);
+    --shadow-hover: 0 8px 30px rgba(196,18,48,0.15);
+    --radius: 8px;
+    --radius-lg: 12px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: var(--font-cn);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { text-decoration: none; color: inherit; transition: 0.2s; }
+  ul { list-style: none; }
+
+  /* ═══════════════════════════════════════
+     HEADER - Full width red banner
+  ═══════════════════════════════════════ */
+  header {
+    background: linear-gradient(135deg, var(--pkured) 0%, var(--pkured-dark) 100%);
+    position: relative;
+  }
+
+  header::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20.5V29m0-18v8.5m-8.5 9.5h17' stroke='%23fff' stroke-opacity='0.08' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");
+    pointer-events: none;
+  }
+
+  .header-top {
+    background: rgba(0,0,0,0.15);
+    padding: 8px 0;
+  }
+
+  .header-top-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-top-text {
+    font-size: 12px;
+    color: rgba(255,255,255,0.8);
+    letter-spacing: 1px;
+  }
+
+  .header-top-links a {
+    font-size: 12px;
+    color: rgba(255,255,255,0.7);
+    margin-left: 20px;
+  }
+
+  .header-top-links a:hover { color: #fff; }
+
+  .header-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 40px 70px;
+    position: relative;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 40px;
+  }
+
+  .brand-mark {
+    width: 6px;
+    height: 40px;
+    background: #fff;
+    border-radius: 3px;
+  }
+
+  .brand-name {
+    font-size: 13px;
+    color: rgba(255,255,255,0.85);
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  .hero-title {
+    font-size: 48px;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1.2;
+    margin-bottom: 18px;
+  }
+
+  .hero-title span {
+    border-bottom: 4px solid rgba(255,255,255,0.5);
+  }
+
+  .hero-intro {
+    font-size: 17px;
+    color: rgba(255,255,255,0.9);
+    max-width: 700px;
+    margin-bottom: 32px;
+    line-height: 1.85;
+  }
+
+  .hero-meta {
+    display: flex;
+    gap: 32px;
+  }
+
+  .meta-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgba(255,255,255,0.85);
+    font-size: 14px;
+  }
+
+  .meta-icon {
+    width: 38px;
+    height: 38px;
+    background: rgba(255,255,255,0.12);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .meta-item strong { color: #fff; font-weight: 600; }
+
+  /* ═══════════════════════════════════════
+     NAV BAR
+  ═══════════════════════════════════════ */
+  .navbar {
+    background: var(--darkblue);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  }
+
+  .nav-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 24px 14px 0;
+    border-right: 1px solid rgba(255,255,255,0.1);
+    margin-right: 16px;
+  }
+
+  .nav-brand-icon {
+    width: 30px;
+    height: 30px;
+    background: var(--pkured);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+  }
+
+  .nav-brand-text {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .nav-list {
+    display: flex;
+    overflow-x: auto;
+  }
+
+  .nav-list::-webkit-scrollbar { display: none; }
+
+  .nav-list a {
+    display: block;
+    color: rgba(255,255,255,0.7);
+    padding: 18px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+    border-bottom: 3px solid transparent;
+  }
+
+  .nav-list a:hover,
+  .nav-list a.active {
+    color: #fff;
+    background: rgba(255,255,255,0.08);
+    border-bottom-color: var(--pkured);
+  }
+
+  /* ═══════════════════════════════════════
+     QUICK NAV
+  ═══════════════════════════════════════ */
+  .quicknav {
+    background: #fff;
+    padding: 36px 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .quicknav-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
+  .section-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--pkured);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .quicknav-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+  }
+
+  .quicknav-card {
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: var(--radius-lg);
+    padding: 22px;
+    display: block;
+    transition: all 0.25s ease;
+    position: relative;
+  }
+
+  .quicknav-card::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 4px; height: 100%;
+    background: var(--darkblue);
+    transform: scaleY(0);
+    transition: transform 0.25s ease;
+    border-radius: var(--radius-lg) 0 0 var(--radius-lg);
+  }
+
+  .quicknav-card:hover {
+    border-color: var(--pkured);
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-3px);
+  }
+
+  .quicknav-card:hover::after {
+    transform: scaleY(1);
+  }
+
+  .quicknav-num {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--pkured);
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+  }
+
+  .quicknav-card h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--darkblue);
+    margin-bottom: 6px;
+  }
+
+  .quicknav-card p {
+    font-size: 13px;
+    color: var(--gray);
+    line-height: 1.5;
+  }
+
+  /* ═══════════════════════════════════════
+     MAIN CONTENT
+  ═══════════════════════════════════════ */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 40px 80px;
+  }
+
+  .section {
+    margin-bottom: 72px;
+  }
+
+  .section-head {
+    display: flex;
+    align-items: baseline;
+    gap: 18px;
+    margin-bottom: 36px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid #eee;
+  }
+
+  .section-num {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--pkured);
+    letter-spacing: 2px;
+  }
+
+  .section-head h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--darkblue);
+  }
+
+  /* ═══════════════════════════════════════
+     INTRO BOX
+  ═══════════════════════════════════════ */
+  .intro-box {
+    background: linear-gradient(135deg, #fff 0%, #fafafa 100%);
+    border: 1px solid #e0e0e0;
+    border-left: 5px solid var(--pkured);
+    border-radius: var(--radius);
+    padding: 26px 30px;
+    margin-bottom: 28px;
+  }
+
+  .intro-box h4 {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--pkured);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .intro-box p {
+    font-size: 15px;
+    line-height: 1.85;
+    color: var(--text);
+  }
+
+  .intro-box strong {
+    color: var(--pkured);
+    font-weight: 600;
+  }
+
+  /* ═══════════════════════════════════════
+     HIGHLIGHT
+  ═══════════════════════════════════════ */
+  .highlight {
+    background: linear-gradient(135deg, #FFF9F9 0%, #FFF5F5 100%);
+    border: 1px solid rgba(196,18,48,0.12);
+    border-radius: var(--radius);
+    padding: 22px 26px;
+    margin: 24px 0;
+    font-size: 15px;
+    line-height: 1.9;
+  }
+
+  .highlight strong {
+    color: var(--pkured);
+  }
+
+  /* ═══════════════════════════════════════
+     SUBSECTION
+  ═══════════════════════════════════════ */
+  .subsection {
+    margin-bottom: 48px;
+  }
+
+  .subsection h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--darkblue);
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .subsection h3::before {
+    content: '';
+    width: 5px;
+    height: 22px;
+    background: var(--pkured);
+    border-radius: 3px;
+    flex-shrink: 0;
+  }
+
+  .subsection p {
+    font-size: 15px;
+    color: var(--text-light);
+    line-height: 1.9;
+    margin-bottom: 14px;
+  }
+
+  /* ═══════════════════════════════════════
+     INFO CARD
+  ═══════════════════════════════════════ */
+  .info-card {
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: var(--radius);
+    padding: 24px;
+    margin: 22px 0;
+    border-left: 4px solid var(--darkblue);
+  }
+
+  .info-card.accent {
+    border-left-color: var(--pkured);
+    background: linear-gradient(135deg, #fff 0%, #FFFAFA 100%);
+  }
+
+  .info-card h4 {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--darkblue);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+
+  .info-card.accent h4 {
+    color: var(--pkured);
+  }
+
+  .info-card p {
+    font-size: 14px;
+    line-height: 1.85;
+    margin-bottom: 10px;
+  }
+
+  .info-card p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* ═══════════════════════════════════════
+     CALLOUT
+  ═══════════════════════════════════════ */
+  .callout {
+    border-radius: var(--radius);
+    padding: 24px 28px;
+    margin: 26px 0;
+    color: #fff;
+  }
+
+  .callout.blue { background: var(--darkblue); }
+  .callout.red { background: var(--pkured); }
+  .callout.gray { background: #4A5568; }
+
+  .callout h4 {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.85;
+    margin-bottom: 10px;
+  }
+
+  .callout p {
+    font-size: 14px;
+    line-height: 1.8;
+    opacity: 0.95;
+  }
+
+  /* ═══════════════════════════════════════
+     TABLE
+  ═══════════════════════════════════════ */
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin: 24px 0;
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+
+  .data-table th {
+    background: var(--darkblue);
+    color: #fff;
+    padding: 13px 18px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+
+  .data-table td {
+    padding: 13px 18px;
+    border-bottom: 1px solid #f0f0f0;
+    vertical-align: top;
+    line-height: 1.7;
+  }
+
+  .data-table tr:last-child td { border-bottom: none; }
+  .data-table tr:nth-child(even) td { background: #fafafa; }
+
+  .data-table td:first-child {
+    font-weight: 600;
+    color: var(--darkblue);
+    white-space: nowrap;
+  }
+
+  /* ═══════════════════════════════════════
+     DIAGRAM - Triangle
+  ═══════════════════════════════════════ */
+  .diagram {
+    margin: 32px 0;
+    text-align: center;
+  }
+
+  .diagram-box {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .diagram-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .tri-card {
+    background: var(--darkblue);
+    color: #fff;
+    border-radius: var(--radius);
+    padding: 16px 24px;
+    min-width: 170px;
+  }
+
+  .tri-card.red { background: var(--pkured); }
+  .tri-card.gray { background: #4A5568; }
+
+  .tri-card strong {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+
+  .tri-card small {
+    font-size: 11px;
+    opacity: 0.85;
+    display: block;
+    line-height: 1.4;
+  }
+
+  .tri-plus {
+    font-size: 22px;
+    color: var(--gray-light);
+    font-weight: 300;
+  }
+
+  .diagram-note {
+    margin-top: 16px;
+    font-size: 13px;
+    color: var(--gray);
+    font-style: italic;
+  }
+
+  /* ═══════════════════════════════════════
+     NUMBERED LIST
+  ═══════════════════════════════════════ */
+  .num-list {
+    list-style: none;
+    counter-reset: item;
+    margin: 20px 0;
+  }
+
+  .num-list li {
+    counter-increment: item;
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: var(--radius);
+    padding: 18px 22px 18px 60px;
+    margin-bottom: 12px;
+    position: relative;
+  }
+
+  .num-list li::before {
+    content: counter(item);
+    position: absolute;
+    left: 16px;
+    top: 18px;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--pkured);
+    background: rgba(196,18,48,0.1);
+    padding: 3px 8px;
+    border-radius: 4px;
+  }
+
+  .num-list strong {
+    color: var(--darkblue);
+    font-weight: 600;
+  }
+
+  .num-list em {
+    font-style: italic;
+    color: var(--pkured);
+    font-size: 13px;
+  }
+
+  /* ═══════════════════════════════════════
+     FLOW
+  ═══════════════════════════════════════ */
+  .flow {
+    margin: 28px 0;
+    text-align: center;
+  }
+
+  .flow-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .flow-step {
+    background: var(--darkblue);
+    color: #fff;
+    border-radius: var(--radius);
+    padding: 12px 20px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+
+  .flow-step.red { background: var(--pkured); }
+
+  .flow-step small {
+    display: block;
+    font-size: 10px;
+    opacity: 0.8;
+    margin-top: 4px;
+    font-weight: 400;
+  }
+
+  .flow-arrow {
+    font-size: 20px;
+    color: var(--pkured);
+    font-weight: 300;
+  }
+
+  /* ═══════════════════════════════════════
+     GRID - Glossary & Books
+  ═══════════════════════════════════════ */
+  .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin-top: 20px;
+  }
+
+  .grid-item {
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: var(--radius);
+    padding: 18px;
+  }
+
+  .grid-term {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--darkblue);
+    margin-bottom: 6px;
+  }
+
+  .grid-def {
+    font-size: 13px;
+    color: var(--gray);
+    line-height: 1.6;
+  }
+
+  .grid-num {
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--pkured);
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+  }
+
+  .grid-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--darkblue);
+    margin-bottom: 4px;
+  }
+
+  .grid-author {
+    font-size: 12px;
+    color: var(--gray);
+  }
+
+  /* ═══════════════════════════════════════
+     FOOTER
+  ═══════════════════════════════════════ */
+  footer {
+    background: var(--darkblue);
+    color: rgba(255,255,255,0.7);
+    text-align: center;
+    padding: 36px;
+  }
+
+  .footer-tag {
+    display: inline-block;
+    background: rgba(196,18,48,0.2);
+    border: 1px solid rgba(196,18,48,0.4);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 5px 16px;
+    border-radius: 18px;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+  }
+
+  footer p {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  /* ═══════════════════════════════════════
+     RESPONSIVE
+  ═══════════════════════════════════════ */
+  @media (max-width: 900px) {
+    .quicknav-grid { grid-template-columns: repeat(2, 1fr); }
+    .grid-2 { grid-template-columns: 1fr; }
+  }
+
+  @media (max-width: 640px) {
+    .header-top-inner, .header-main, .quicknav-inner, .container, .nav-inner {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .hero-title { font-size: 30px; }
+    .hero-intro { font-size: 15px; }
+    .hero-meta { flex-direction: column; gap: 12px; }
+    .quicknav-grid { grid-template-columns: 1fr; }
+    .section-head { flex-direction: column; gap: 6px; }
+    .section-head h2 { font-size: 22px; }
+    .diagram-row { flex-direction: column; }
+    .tri-plus { transform: rotate(90deg); }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-top">
+    <div class="header-top-inner">
+      <span class="header-top-text">北京大学光华管理学院 · 学术资源平台</span>
+      <div class="header-top-links">
+        <a href="https://www.gsm.pku.edu.cn/" target="_blank">学院官网</a>
+        <a href="#appendix">延伸阅读</a>
+      </div>
+    </div>
+  </div>
+  <div class="header-main">
+    <div class="brand">
+      <div class="brand-mark"></div>
+      <span class="brand-name">Guanghua School of Management</span>
+    </div>
+    <h1 class="hero-title">中国特色的<span>国家治理</span></h1>
+    <p class="hero-intro">系统阐述行政发包制、治理不可能三角与"中央政府—地方政府—市场"三位一体框架，深入解读中国经济奇迹背后的制度逻辑。</p>
+    <div class="hero-meta">
+      <div class="meta-item">
+        <span class="meta-icon">👤</span>
+        <div>
+          <div style="font-size:11px;opacity:0.7">主讲</div>
+          <strong>周黎安 教授</strong>
+        </div>
+      </div>
+      <div class="meta-item">
+        <span class="meta-icon">📍</span>
+        <div>
+          <div style="font-size:11px;opacity:0.7">学院</div>
+          <strong>光华管理学院</strong>
+        </div>
+      </div>
+      <div class="meta-item">
+        <span class="meta-icon">📅</span>
+        <div>
+          <div style="font-size:11px;opacity:0.7">日期</div>
+          <strong>2026年4月</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <div class="nav-brand">
+      <div class="nav-brand-icon">PKU</div>
+      <span class="nav-brand-text">光华管理学院</span>
+    </div>
+    <ul class="nav-list">
+      <li><a href="#intro">导言</a></li>
+      <li><a href="#part1">行政发包制</a></li>
+      <li><a href="#part2">治理不可能三角</a></li>
+      <li><a href="#part3">三位一体</a></li>
+      <li><a href="#appendix">附录</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="quicknav">
+  <div class="quicknav-inner">
+    <div class="section-label">内容导航</div>
+    <div class="quicknav-grid">
+      <a href="#part1" class="quicknav-card">
+        <div class="quicknav-num">PART 01</div>
+        <h3>行政发包制</h3>
+        <p>理论渊源 · 三个核心维度 · 与韦伯科层制比较</p>
+      </a>
+      <a href="#part2" class="quicknav-card">
+        <div class="quicknav-num">PART 02</div>
+        <h3>治理不可能三角</h3>
+        <p>核心命题 · 五项推论 · 组织治理底层逻辑</p>
+      </a>
+      <a href="#part3" class="quicknav-card">
+        <div class="quicknav-num">PART 03</div>
+        <h3>三位一体架构</h3>
+        <p>官场+市场 · 三性合一 · 产业政策全周期</p>
+      </a>
+      <a href="#appendix" class="quicknav-card">
+        <div class="quicknav-num">APPENDIX</div>
+        <h3>附录</h3>
+        <p>关键概念速查 · 推荐著作</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<main class="container">
+
+<section class="section" id="intro">
+  <div class="intro-box">
+    <h4>导言</h4>
+    <p>周黎安教授是中国政治经济学领域最具影响力的学者之一，其提出的<strong>"行政发包制"</strong>、<strong>"官场+市场"</strong>双竞争模式和<strong>"政治锦标赛"</strong>等概念框架，已经成为理解中国经济奇迹和国家治理的核心分析工具。</p>
+  </div>
+  <div class="highlight">
+    本次讲座围绕<strong>两大主题</strong>展开：<br><br>
+    <strong>一、治理不可能三角</strong>——揭示刚性治理目标、刚性预算资源和刚性规则约束三者之间的内在张力，为理解不同组织形态提供了统一的分析语言。<br><br>
+    <strong>二、"三位一体"的政府—市场关系</strong>——突破西方主流经济学关于政府与市场的"二分法"范式，深入阐释中国产业政策成功的制度密码。
+  </div>
+</section>
+
+<section class="section" id="part1">
+  <div class="section-head">
+    <span class="section-num">PART 01</span>
+    <h2>行政发包制 — 中国国家治理的核心分析概念</h2>
+  </div>
+
+  <div class="subsection">
+    <h3>一、理论渊源：从企业理论到国家治理</h3>
+    <p>行政发包制的理论灵感源自经济学企业理论中关于"雇佣制"与"外包制"的经典讨论。在企业组织中，雇佣制意味着企业直接雇用员工，通过内部层级管理来组织生产；而外包制则是将特定任务交给外部独立承包商完成，通过市场契约来协调。</p>
+    <div class="info-card">
+      <h4>📚 知识拓展：科斯与威廉姆森的企业理论</h4>
+      <p><strong>科斯（1937）</strong>：企业之所以存在，是因为市场交易存在成本。当市场交易成本过高时，将交易内部化到企业层级中更为经济。</p>
+      <p style="margin-top:12px;"><strong>威廉姆森</strong>：提出"市场—混合—层级"的组织治理连续体，认为资产专用性、交易不确定性和交易频率决定了最优的治理结构选择。行政发包制正是借鉴了这一"混合治理"的分析思路。</p>
+    </div>
+    <div class="highlight">
+      周黎安教授在<strong>2008年</strong>首次提出"行政发包制"概念，并在<strong>2014年</strong>和<strong>2016年</strong>的论文中进行系统阐述。核心洞见：中国的国家治理既不是纯粹的韦伯式科层制，也不是纯粹的市场外包制，而是在科层制的组织外壳下嵌入了发包—承包关系的<strong>"混合形态"</strong>。
+    </div>
+  </div>
+
+  <div class="subsection">
+    <h3>二、行政发包制的三个核心维度</h3>
+    <div class="callout red">
+      <h4>维度一</h4>
+      <p><strong>行政权的分配：相机性放权</strong><br>发包人（上级政府）保有正式权威和最终控制权，承包人（下级政府）获得大量自由裁量权。这种权力关系呈现"名义权力在上、实际权力在下"的格局。</p>
+    </div>
+    <div class="callout blue">
+      <h4>维度二</h4>
+      <p><strong>经济激励与预算筹措：承包人的强激励</strong><br>上级拨付的正式财政预算往往<strong>有限</strong>，承包方需自行筹集大部分经费。这形成了预算内与预算外并行的<strong>"二元财政体制"</strong>。</p>
+    </div>
+    <div class="callout gray">
+      <h4>维度三</h4>
+      <p><strong>内部控制与问责考核：结果导向的无限责任</strong><br>考核问责呈现<strong>"人格化、结果导向"</strong>的特征。上级主要考核最终结果，相对不问过程，强调<strong>"以结果论英雄"</strong>。</p>
+    </div>
+  </div>
+
+  <div class="subsection">
+    <h3>三、行政发包制 vs. 韦伯式理性科层制</h3>
+    <table class="data-table">
+      <tr><th>比较维度</th><th>行政发包制（中国）</th><th>韦伯式理性科层制（西方）</th></tr>
+      <tr><td>行政权分配</td><td>模糊性相机性放权；下级拥有不可预测的自由裁量权</td><td>制度化授权/分权；清晰明确的权力边界与管辖范围</td></tr>
+      <tr><td>预算体制</td><td>预算内外二元体系；承包方自筹经费</td><td>集中化全口径预算控制；固定薪酬</td></tr>
+      <tr><td>内部控制</td><td>人格化、结果导向、无限责任</td><td>职业化、程序规则导向、尽职免责</td></tr>
+      <tr><td>不确定性管理</td><td>事后吸收：通过事后问责处理</td><td>事前吸收：通过规则、程序事前配置</td></tr>
+    </table>
+  </div>
+</section>
+
+<section class="section" id="part2">
+  <div class="section-head">
+    <span class="section-num">PART 02</span>
+    <h2>治理不可能三角 — 组织治理的底层逻辑</h2>
+  </div>
+
+  <div class="subsection">
+    <h3>一、核心命题</h3>
+    <div class="intro-box accent">
+      <h4>治理不可能三角</h4>
+      <p><strong>刚性治理目标、刚性（有限）治理资源（预算）和刚性规则约束三者不可同时兼得。</strong></p>
+      <p style="margin-top:14px;">委托人不可能同时要求代理人：</p>
+      <p style="margin-top:6px;">✓ 严格遵守事先确立的规则和程序<br>✓ 接受事前配置的有限预算资源<br>✓ 完成一个刚性且具有挑战性的治理目标</p>
+      <p style="margin-top:18px;color:var(--pkured);font-weight:700;font-size:15px;">通俗地说："既要，也要"尚可，但不能"既要，也要，还要"。</p>
+    </div>
+
+    <div class="diagram">
+      <div class="diagram-box">
+        <div class="diagram-row">
+          <div class="tri-card">
+            <strong>🔵 刚性治理目标</strong>
+            <small>挑战性绩效指标<br>无限连带责任</small>
+          </div>
+          <span class="tri-plus">+</span>
+          <div class="tri-card">
+            <strong>🟢 刚性预算资源</strong>
+            <small>有限预算<br>固定人员编制</small>
+          </div>
+          <span class="tri-plus">+</span>
+          <div class="tri-card gray">
+            <strong>🔴 刚性规则约束</strong>
+            <small>严格程序<br>合规要求</small>
+          </div>
+        </div>
+        <p class="diagram-note">= 系统性失灵 × （三个维度只能同时满足两个）</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="subsection">
+    <h3>二、五项理论推论</h3>
+    <ol class="num-list">
+      <li><strong>目标刚性 + 预算刚性 → 规则弹性上升</strong><br>当治理目标具有高度刚性，且预算受到严格约束时，规则执行的弹性必然上升。<em>典型体现：运动式治理</em></li>
+      <li><strong>规则刚性 + 预算刚性 → 目标弹性上升</strong><br>在规则和程序约束高度刚性、且预算受到硬性限制的条件下，组织的治理目标将趋于模糊或可调整。</li>
+      <li><strong>目标刚性 + 规则刚性 → 预算弹性上升</strong><br>当治理目标与规则约束同时保持高度刚性时，组织必然通过增加资源弹性来维持可行性。<em>典型案例：集中力量办大事</em></li>
+      <li><strong>三角并行 → 系统性失灵</strong><br>如果强制性地同时要求三个维度都保持刚性，将导致数据造假、形式主义、消极避责等问题。</li>
+      <li><strong>三角同时降维 → 低张力均衡</strong><br>在低风险领域，治理体系通过同步降低目标、资源与程序的制度强度，形成"降维稳定"的均衡形态。</li>
+    </ol>
+  </div>
+</section>
+
+<section class="section" id="part3">
+  <div class="section-head">
+    <span class="section-num">PART 03</span>
+    <h2>"三位一体"的政府—市场关系</h2>
+  </div>
+
+  <div class="subsection">
+    <h3>一、中国地方政府的独特性</h3>
+    <ol class="num-list">
+      <li><strong>双重职责：</strong>不仅要提供公共产品，更将促进经济发展作为中心任务</li>
+      <li><strong>关键生产要素：</strong>对土地、融资、税收优惠、人才政策、基础设施等具有支配或影响能力</li>
+      <li><strong>关键性角色：</strong>四级地方政府体系在"属地管理"模式下，具有巨大的实际权力和影响力</li>
+    </ol>
+  </div>
+
+  <div class="subsection">
+    <h3>二、"官场+市场"双竞争模式</h3>
+    <div class="flow">
+      <div class="flow-row">
+        <div class="flow-step red">
+          官场竞争
+          <small>地方官员晋升锦标赛</small>
+        </div>
+        <span class="flow-arrow">⟷</span>
+        <div class="flow-step">
+          市场竞争
+          <small>辖区企业的经济表现</small>
+        </div>
+      </div>
+    </div>
+    <div class="info-card">
+      <h4>🔄 双向嵌入机制</h4>
+      <p><strong>官场竞争依赖市场竞争：</strong>辖区企业在市场竞争中的表现直接影响地方官员在政治锦标赛中的排名。</p>
+      <p style="margin-top:10px;"><strong>市场竞争依赖官场竞争：</strong>企业竞争力依赖于当地基础设施、营商环境和政策支持。</p>
+    </div>
+  </div>
+
+  <div class="subsection">
+    <h3>三、地方政府的"三性合一"</h3>
+    <div class="diagram">
+      <div class="diagram-box">
+        <div class="diagram-row">
+          <div class="tri-card">
+            <strong>🏛️ 公共性</strong>
+            <small>提供地方性公共产品<br>和公共服务</small>
+          </div>
+          <span class="tri-plus">+</span>
+          <div class="tri-card red">
+            <strong>🏁 竞争性</strong>
+            <small>地方官员围绕政绩<br>指标展开锦标赛竞争</small>
+          </div>
+          <span class="tri-plus">+</span>
+          <div class="tri-card gray">
+            <strong>💹 市场性</strong>
+            <small>通过股权投资、政府<br>引导基金参与市场竞争</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="highlight">
+      这种"三性合一"意味着地方政府在辖区内是<strong>"裁判员"</strong>，在辖区之间是<strong>"运动员"</strong>——既监管辖区市场，又被上级政府监管。这是西方政府—市场"二分法"无法恰当描述的制度现象。
+    </div>
+  </div>
+
+  <div class="subsection">
+    <h3>四、产业政策的全周期评价视角</h3>
+    <table class="data-table">
+      <tr><th>阶段</th><th>中央政府</th><th>地方政府</th><th>市场</th></tr>
+      <tr><td>前期</td><td>中长期规划、普惠型财政支持</td><td>针对性招商引资、推出优惠政策</td><td>新企业涌入</td></tr>
+      <tr><td>中期</td><td>制定行业标准、优化支持政策</td><td>协力促成产业集聚</td><td>跨地区竞争加剧</td></tr>
+      <tr><td>后期</td><td>淘汰落后产能、加强监管</td><td>支持优异企业，善后僵尸企业</td><td>市场结构走向集中</td></tr>
+    </table>
+  </div>
+</section>
+
+<section class="section" id="appendix">
+  <div class="section-head">
+    <span class="section-num">APPENDIX</span>
+    <h2>附录：关键概念与延伸阅读</h2>
+  </div>
+
+  <div class="subsection">
+    <h3>关键概念速查</h3>
+    <div class="grid-2">
+      <div class="grid-item">
+        <div class="grid-term">行政发包制</div>
+        <div class="grid-def">在科层制的组织外壳下嵌入发包—承包关系的混合治理形态。</div>
+      </div>
+      <div class="grid-item">
+        <div class="grid-term">治理不可能三角</div>
+        <div class="grid-def">刚性治理目标、刚性预算资源和刚性规则约束三者不可同时兼得。</div>
+      </div>
+      <div class="grid-item">
+        <div class="grid-term">政治锦标赛</div>
+        <div class="grid-def">中国地方官员围绕经济发展绩效等指标展开的晋升竞争。</div>
+      </div>
+      <div class="grid-item">
+        <div class="grid-term">官场+市场</div>
+        <div class="grid-def">地方官员之间的政治竞争与辖区企业之间的市场竞争相互嵌入的发展模式。</div>
+      </div>
+      <div class="grid-item">
+        <div class="grid-term">三性合一</div>
+        <div class="grid-def">中国地方政府同时具有公共性、竞争性和市场性三重属性。</div>
+      </div>
+      <div class="grid-item">
+        <div class="grid-term">三位一体</div>
+        <div class="grid-def">"中央政府—地方政府—市场"三者分工协作、各司其职的架构。</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="subsection" style="margin-top:44px;">
+    <h3>延伸阅读推荐</h3>
+    <div class="grid-2">
+      <div class="grid-item">
+        <div class="grid-num">01</div>
+        <div class="grid-title">《转型中的地方政府：官员激励与治理》（第二版）</div>
+        <div class="grid-author">周黎安，格致出版社，2017年</div>
+      </div>
+      <div class="grid-item">
+        <div class="grid-num">02</div>
+        <div class="grid-title">"行政发包制"，《社会》，2014年第6期</div>
+        <div class="grid-author">行政发包制概念的系统性阐述</div>
+      </div>
+      <div class="grid-item">
+        <div class="grid-num">03</div>
+        <div class="grid-title">"'官场+市场'与中国增长故事"，《社会》，2018年第2期</div>
+        <div class="grid-author">系统提出"官场+市场"双竞争模式</div>
+      </div>
+      <div class="grid-item">
+        <div class="grid-num">04</div>
+        <div class="grid-title">《创新者的窘境》</div>
+        <div class="grid-author">克里斯坦森，颠覆式创新经典</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-tag">北京大学光华管理学院 D40</div>
+  <p>本页面内容基于周黎安教授讲座整理 | 仅供内部学术交流使用</p>
+  <p style="margin-top:6px;opacity:0.6;">© 2026 Guanghua School of Management, Peking University</p>
+</footer>
+
+<script>
+  // Active nav highlight
+  const sections = document.querySelectorAll('.section[id]');
+  const navLinks = document.querySelectorAll('.nav-list a');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(s => {
+      if (window.scrollY >= s.offsetTop - 100) current = s.getAttribute('id');
+    });
+    navLinks.forEach(a => {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  }, { passive: true });
+</script>
+
+</body>
+</html>
